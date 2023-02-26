@@ -8,7 +8,7 @@ def mail_message(code, email,):
     send_mail(
         'From django project',
         link,
-        'damirplaneta6526@gmail.com',
+        'damirpractice@gmail.com',
         [email]
     )
 # Register, urls, Registerserializer, models activation_code
