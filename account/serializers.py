@@ -21,7 +21,7 @@ class ForgotPasswordSerializer(serializers.Serializer):
         user.create_activation_code()
         user.save()
         send_mail(
-            'Password recovery Tutorial_v2',
+            'Password recovery College',
             f'Confirmation code:{user.activation_code}',
             'bekbol.2019@gmail.com',
             [email]
