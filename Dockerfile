@@ -2,7 +2,7 @@ FROM python:3.8
 
 ENV PYTHONUNBUFFERED 1
 
-WORKDIR 
+WORKDIR /home/ubuntu/college/actions-runner/_work/college/college
 
 COPY . .
 
