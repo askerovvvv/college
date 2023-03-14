@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./data
+    environment:
+      - POSTGRES_DB=postgres221
+      - POSTGRES_USER=postgres221
+      - POSTGRES_PASSWORD=postgres221
+  web: 
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8007
+    ports:
+      - "8007:8007"
+    depends_on:
+      - db 
